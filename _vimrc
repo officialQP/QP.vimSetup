@@ -37,7 +37,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-latex/vim-latex'
 Plugin 'scrooloose/nerdTree'
 Plugin 'rkulla/pydiction'
-Plugin 'python-syntax'
+Plugin 'hdima/python-syntax'
 " All of your Plugins must be added before the following line
 call vundle#end()           
 filetype plugin indent on    
@@ -102,7 +102,7 @@ set guifont=Prestige_Elite_Std:h14:b:cANSI
    imap <right> <nop>
 
  "Mapping leaderkey and nerdtree button
-   let mapleader = "ö" 
+   let mapleader = "Ã¶" 
    nmap <leader>ne :NERDTreeToggle<cr>
  "Mapping f7 to autoformat
    map <F7> mzgg=G`z
@@ -171,5 +171,6 @@ set expandtab
 set softtabstop=4
 set autoindent
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
-autocmd BufWritePre *.py normal m`:%s/\s\+$//e``
+autocmd BufWritePre *.py normal m`:%s/\s\+$//e
+``
 color atom
